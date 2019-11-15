@@ -1,11 +1,114 @@
-.item1 {
-  grid-area: myArea;
+
+.main-grid {
+  text-align: center;
+  display: grid;
+  padding: 30px;
+  grid-template-areas: 
+  ". team ."
+  ;
 }
 
 .grid-container {
+  background-color: green;
+  border-radius: 20px;
+  grid-area: team;
+  padding: 20px;
   display: grid;
   text-align: center;
-  grid-template-areas: ". . myArea . .";
+  grid-template-areas: 
+  ". . . . . title title . . . . ."
+  "wingBackRight . . . centerBackRight . . centerBackLeft . . . wingBackLeft"
+  ". . . defensiveMidfieldRight . . . . defensiveMidfieldLeft . . ."
+  "offensiveMidfieldRight . . . . offensiveMidfieldCenter . . . . . offensiveMidfieldLeft"
+  ;
+}
+
+
+
+.title {
+  grid-area: title;
+  padding-bottom: 50px;
+}
+
+.wingBackLeft {
+  border-radius: 20px;
+  grid-area: wingBackLeft;
+  color: white;
+  width: 150px;
+  height: 150px;
+}
+
+.wingBackRight {
+  border-radius: 20px;
+  grid-area: wingBackRight;
+  color: white;
+  width: 150px;
+  height: 150px;
+}
+
+.centerBackRight {
+  border-radius: 20px;
+  grid-area: centerBackRight;
+  color: white;
+  width: 150px;
+  height: 150px;
+}
+
+.centerBackLeft {
+  border-radius: 20px;
+  grid-area: centerBackLeft;
+  color: white;
+  width: 150px;
+  height: 150px;
+  padding-bottom: 100px;
+}
+
+
+.defensiveMidfieldLeft {
+  border-radius: 20px;
+  grid-area: defensiveMidfieldLeft;
+  background-color: black;
+  color: white;
+  width: 150px;
+  height: 150px;
+}
+
+.defensiveMidfieldRight{
+  border-radius: 20px;
+  grid-area: defensiveMidfieldRight;
+  background-color: black;
+  color: white;
+  width: 150px;
+  height: 150px;
+  padding-bottom: 100px;
+}
+
+.offensiveMidfieldRight{
+  border-radius: 20px;
+  grid-area: offensiveMidfieldRight;
+  background-color: black;
+  color: white;
+  width: 150px;
+  height: 150px;
+}
+
+.offensiveMidfieldCenter{
+  border-radius: 20px;
+  grid-area: offensiveMidfieldCenter;
+  background-color: black;
+  color: white;
+  width: 150px;
+  height: 150px;
+}
+
+.offensiveMidfieldLeft{
+  border-radius: 20px;
+  grid-area: offensiveMidfieldLeft;
+  background-color: black;
+  color: white;
+  width: 150px;
+  height: 150px;
+  padding-bottom: 100px;
 }
 
 .banner {
