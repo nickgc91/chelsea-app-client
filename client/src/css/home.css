@@ -1,7 +1,32 @@
-
-
-
-.home {
-    background-image: 'public/GettyImages-1177672088.jpg' ;
+.item1 {
+  grid-area: myArea;
 }
+
+.grid-container {
+  display: grid;
+  text-align: center;
+  grid-template-areas: ". . myArea . .";
+}
+
+.banner {
+  display: grid;
+  grid-template-areas: "banner1 banner2 banner3";
+  height: 200px;
+}
+
+.banner1 {
+  grid-area: banner1;
+  background-image: url("tammytammy.png");
+}
+
+.banner2 {
+  grid-area: banner2;
+  background-image: url("pulisicBanner.png");
+}
+
+.banner3 {
+  grid-area: banner3;
+  background-image: url("willian.png");
+}
+
 
