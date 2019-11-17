@@ -4,8 +4,10 @@
   display: grid;
   padding: 30px;
   grid-template-areas: 
-  ". team ."
+  ". . team . ."
   ;
+  color: black;
+  font-size: 20px;
 }
 
 .grid-container {
@@ -17,9 +19,12 @@
   text-align: center;
   grid-template-areas: 
   ". . . . . title title . . . . ."
+  ". . . . . goal goal . . . . ."
+  ". . . . . keeper keeper . . . . ."
   "wingBackRight . . . centerBackRight . . centerBackLeft . . . wingBackLeft"
   ". . . defensiveMidfieldRight . . . . defensiveMidfieldLeft . . ."
   "offensiveMidfieldRight . . . . offensiveMidfieldCenter . . . . . offensiveMidfieldLeft"
+  ". . . . . striker striker . . . . ."
   ;
 }
 
@@ -30,10 +35,25 @@
   padding-bottom: 50px;
 }
 
+.goal {
+  border-radius: 20px;
+  grid-area: goal;
+  width: 150px;
+  height: 150px;
+  padding-bottom: 100px;
+}
+
+.keeper {
+  border-radius: 20px;
+  grid-area: keeper;
+  width: 150px;
+  height: 150px;
+  padding-bottom: 100px;
+}
+
 .wingBackLeft {
   border-radius: 20px;
   grid-area: wingBackLeft;
-  color: white;
   width: 150px;
   height: 150px;
 }
@@ -41,7 +61,6 @@
 .wingBackRight {
   border-radius: 20px;
   grid-area: wingBackRight;
-  color: white;
   width: 150px;
   height: 150px;
 }
@@ -49,7 +68,6 @@
 .centerBackRight {
   border-radius: 20px;
   grid-area: centerBackRight;
-  color: white;
   width: 150px;
   height: 150px;
 }
@@ -57,7 +75,6 @@
 .centerBackLeft {
   border-radius: 20px;
   grid-area: centerBackLeft;
-  color: white;
   width: 150px;
   height: 150px;
   padding-bottom: 100px;
@@ -67,8 +84,6 @@
 .defensiveMidfieldLeft {
   border-radius: 20px;
   grid-area: defensiveMidfieldLeft;
-  background-color: black;
-  color: white;
   width: 150px;
   height: 150px;
 }
@@ -76,8 +91,6 @@
 .defensiveMidfieldRight{
   border-radius: 20px;
   grid-area: defensiveMidfieldRight;
-  background-color: black;
-  color: white;
   width: 150px;
   height: 150px;
   padding-bottom: 100px;
@@ -86,8 +99,6 @@
 .offensiveMidfieldRight{
   border-radius: 20px;
   grid-area: offensiveMidfieldRight;
-  background-color: black;
-  color: white;
   width: 150px;
   height: 150px;
 }
@@ -95,8 +106,6 @@
 .offensiveMidfieldCenter{
   border-radius: 20px;
   grid-area: offensiveMidfieldCenter;
-  background-color: black;
-  color: white;
   width: 150px;
   height: 150px;
 }
@@ -104,8 +113,14 @@
 .offensiveMidfieldLeft{
   border-radius: 20px;
   grid-area: offensiveMidfieldLeft;
-  background-color: black;
-  color: white;
+  width: 150px;
+  height: 150px;
+  padding-bottom: 100px;
+}
+
+.striker{
+  border-radius: 20px;
+  grid-area: striker;
   width: 150px;
   height: 150px;
   padding-bottom: 100px;
