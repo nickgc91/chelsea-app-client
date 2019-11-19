@@ -7,17 +7,17 @@ const NavBar = () => {
       <ul>
         <li>
           <a class="active" href="#home">
-            Home
+            HOME
           </a>
         </li>
         <li>
-          <a href="#news">News</a>
+          <a href="#news">FIXTURES</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="#contact">NEWS</a>
         </li>
         <li>
-          <a href="#about">About</a>
+          <a href="#about">CHELSEA STORE</a>
         </li>
       </ul>
     </div>
