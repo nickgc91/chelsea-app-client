@@ -1,0 +1,24 @@
+
+
+
+
+.main-container {
+    grid-template-areas:
+    ". gridItem .";
+    float: right;
+}
+
+.fixtures-grid {
+    background-color: #034694;
+    border-radius: 20px;
+    grid-area: gridItem;
+    padding: 20px;
+    text-align: center;
+    grid-template-areas: 
+    ". fixtures ."
+    ;
+  }
+
+  .fixturesTable {
+      grid-area: fixtures;
+  }
