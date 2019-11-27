@@ -1,14 +1,13 @@
 import React from "react";
-import "../css/fixtures.css";
+import "../css/home.css";
 
 class Fixtures extends React.Component {
   render() {
     return (
-      <div className="main-container">
-        <div className="fixtures-grid">
+          <div className="fixturesTable">
           <h1>fixtures</h1>
-        </div>
-      </div>
+          </div>
+       
     );
   }
 }
