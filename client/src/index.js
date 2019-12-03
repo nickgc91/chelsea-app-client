@@ -14,6 +14,7 @@ ReactDOM.render(
       <NavBar />
       <App />
     </Router>
+    <Banner />
   </div>,
   document.getElementById("root")
 );

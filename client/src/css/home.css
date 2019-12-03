@@ -41,7 +41,7 @@
   padding: 20px;
   grid-area: team;
   text-align: center;
-  opacity: 0.7;
+  color: white;
 }
 
 
@@ -160,4 +160,12 @@
   background-image: url("willian.png");
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
 
+th, td {
+  text-align: left;
+  padding: 8px;
+}
