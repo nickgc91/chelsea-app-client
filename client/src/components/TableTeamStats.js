@@ -1,5 +1,4 @@
 import React from "react";
-import { directive } from "@babel/types";
 
 const TableTeamStats = props => {
   return (
