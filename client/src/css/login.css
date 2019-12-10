@@ -1,0 +1,11 @@
+.loginForm {
+    text-align: center;
+    align-content: center;
+    position: fixed;
+    top: 300px;
+    width: 100%;
+}
+
+.form {
+   padding-right: 50px;
+}

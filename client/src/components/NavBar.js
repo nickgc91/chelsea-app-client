@@ -18,6 +18,9 @@ const NavBar = () => {
         <li>
           <a href="/about">CHELSEA STORE</a>
         </li>
+        <li>
+          <a href="/login">LOGIN</a>
+        </li>
       </ul>
     </div>
   );

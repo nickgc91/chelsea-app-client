@@ -4,12 +4,16 @@ import "../css/home.css";
 class Team extends React.Component {
   state = {
     kepaInfo: false,
-    emersonInfo: false,
+    reeceInfo: false,
     azpiInfo: false,
     zoumaInfo: false,
+    // tomoriInfo: false,
+    rudigerInfo: false,
     jorginhoInfo: false,
     willianInfo: false,
-    mountInfo: false,
+    kanteInfo: false,
+    kovacicInfo: false,
+    // mountInfo: false,
     pulisicInfo: false,
     tammyInfo: false
   };
@@ -20,9 +24,9 @@ class Team extends React.Component {
     });
   };
 
-  changeEmerson = () => {
+  changeReece = () => {
     this.setState({
-      emersonInfo: !this.state.emersonInfo
+      reeceInfo: !this.state.reeceInfo
     });
   };
 
@@ -38,15 +42,27 @@ class Team extends React.Component {
     });
   };
 
-  changeTomori = () => {
+  // changeTomori = () => {
+  //   this.setState({
+  //     tomoriInfo: !this.state.tomoriInfo
+  //   });
+  // };
+
+  changeRudiger = () => {
     this.setState({
-      tomoriInfo: !this.state.tomoriInfo
+      rudigerInfo: !this.state.rudigerInfo
     });
   };
 
   changeKante = () => {
     this.setState({
       kanteInfo: !this.state.kanteInfo
+    });
+  };
+
+  changeKovacic = () => {
+    this.setState({
+      kovacicInfo: !this.state.kovacicInfo
     });
   };
 
@@ -62,11 +78,11 @@ class Team extends React.Component {
     });
   };
 
-  changeMount = () => {
-    this.setState({
-      mountInfo: !this.state.mountInfo
-    });
-  };
+  // changeMount = () => {
+  //   this.setState({
+  //     mountInfo: !this.state.mountInfo
+  //   });
+  // };
 
   changePulisic = () => {
     this.setState({
@@ -115,40 +131,40 @@ class Team extends React.Component {
           </div>
         )}
 
-        {!this.state.emersonInfo ? (
-          <div className="wingBackLeft">
+        {!this.state.reeceInfo ? (
+          <div className="wingBackRight">
             <img
-              onMouseEnter={this.changeEmerson}
-              src="https://chelseacore.com/wp-content/uploads/2018/10/Emerson-1.png"
+              onMouseEnter={this.changeReece}
+              src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p225796.png"
               alt="image"
               style={{ width: "150px", height: "150px" }}
             />
-            33 Emerson Palmieri
+            24 Reece James
           </div>
         ) : (
           <div
-            onMouseLeave={this.changeEmerson}
-            className="wingBackLeft"
+            onMouseLeave={this.changeReece}
+            className="wingBackRight"
             style={{ width: "170px", height: "150px" }}
           >
             <img
-              src="https://chelseacore.com/wp-content/uploads/2018/10/Emerson-1.png"
+              src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p225796.png"
               alt="image"
               style={{ width: "150px", height: "150px", opacity: 0.5 }}
             />{" "}
             <br />
-            33 Emerson Palmieri
+            24 Reece James
             <br />
             ------------------- <br />
-            7 APPEARANCES <br />
+            8 APPEARANCES <br />
             0 GOALS <br />
-            0 ASSISTS <br />
-            56% TACKLE SUCCESS
+            1 ASSISTS <br />
+            75% TACKLE SUCCESS
           </div>
         )}
 
         {!this.state.azpiInfo ? (
-          <div className="wingBackRight">
+          <div className="wingBackLeft">
             <img
               onMouseEnter={this.changeAzpi}
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p41328.png"
@@ -160,7 +176,7 @@ class Team extends React.Component {
         ) : (
           <div
             onMouseLeave={this.changeAzpi}
-            className="wingBackRight"
+            className="wingBackLeft"
             style={{ width: "170px", height: "150px" }}
           >
             <img
@@ -210,7 +226,7 @@ class Team extends React.Component {
           </div>
         )}
 
-        {!this.state.tomoriInfo ? (
+        {/* {!this.state.tomoriInfo ? (
           <div className="centerBackLeft">
             <img
               onMouseEnter={this.changeTomori}
@@ -239,10 +255,41 @@ class Team extends React.Component {
             0 ASSISTS <br />
             57% TACKLE SUCCESS
           </div>
+        )} */}
+
+{!this.state.rudigerInfo ? (
+          <div className="centerBackLeft">
+            <img
+              onMouseEnter={this.changeRudiger}
+              src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p102380.png"
+              alt="image"
+              style={{ width: "150px", height: "150px" }}
+            />
+            2 Antonio Rudiger
+          </div>
+        ) : (
+          <div
+            onMouseLeave={this.changeRudiger}
+            className="centerBackLeft"
+            style={{ width: "170px", height: "150px" }}
+          >
+            <img
+              src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p102380.png"
+              alt="image"
+              style={{ width: "150px", height: "150px", opacity: 0.5 }}
+            />{" "}
+            <br />
+            2 Antonio Rudiger <br />
+            ------------------- <br />
+            1 APPEARANCES <br />
+            0 GOALS <br />
+            0 ASSISTS <br />
+            100% TACKLE SUCCESS
+          </div>
         )}
 
         {!this.state.kanteInfo ? (
-          <div className="defensiveMidfieldLeft">
+          <div className="offensiveMidfieldCenter">
             <img
               onMouseEnter={this.changeKante}
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p116594.png"
@@ -254,7 +301,7 @@ class Team extends React.Component {
         ) : (
           <div
             onMouseLeave={this.changeKante}
-            className="defensiveMidfieldLeft"
+            className="offensiveMidfieldCenter"
             style={{ width: "170px", height: "150px" }}
           >
             <img
@@ -334,7 +381,7 @@ class Team extends React.Component {
           </div>
         )}
 
-        {!this.state.mountInfo ? (
+        {/* {!this.state.mountInfo ? (
           <div className="offensiveMidfieldCenter">
             <img
               onMouseEnter={this.changeMount}
@@ -366,6 +413,41 @@ class Team extends React.Component {
             4 GOALS <br />
             1 ASSISTS <br />
             83% PASS ACCURACY
+          </div>
+        )} */}
+
+{!this.state.kovacicInfo ? (
+          <div className="defensiveMidfieldLeft">
+            <img
+              onMouseEnter={this.changeKovacic}
+              src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p91651.png"
+              alt="image"
+              style={{ width: "150px", height: "150px" }}
+            />
+            17 Mateo Kovacic
+          </div>
+        ) : (
+          <div
+            onMouseLeave={this.changeKovacic}
+            className="defensiveMidfieldLeft"
+            style={{
+              width: "170px",
+              height: "150px",
+              paddingBottom: "100px"
+            }}
+          >
+            <img
+              src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p91651.png"
+              alt="image"
+              style={{ width: "150px", height: "150px", opacity: 0.5 }}
+            />{" "}
+            <br />
+            17 Mateo Kovacic <br />
+            ------------------- <br />
+            16 APPEARANCES <br />
+            1 GOALS <br />
+            2 ASSISTS <br />
+            91% PASS ACCURACY
           </div>
         )}
 
