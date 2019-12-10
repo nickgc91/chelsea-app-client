@@ -52,9 +52,9 @@ class Fixtures extends React.Component {
           <br/><br/>
           <li>Chelsea 0 - 1 West Ham (PL)</li>
           <br/><br/>
-          <li>04/12/19 Chelsea - Aston Villa (PL)</li>
+          <li>Chelsea 2 - 1 Aston Villa (PL)</li>
           <br/><br/>
-          <li>07/12/19 Everton - Chelsea (PL)</li>
+          <li>Everton 3 - 1 Chelsea (PL)</li>
           <br/><br/>
           <li>10/12/19 Chelsea - Lille (CL)</li>
           <br/><br/>
