@@ -1,53 +1,70 @@
 import React from "react";
 import "../css/login.css";
 
-class Login extends React.Component {
+import API from "./API";
 
-  state= {
+
+class Login extends React.Component {
+  state = {
     loggedIn: false,
     showForm: true,
-    username: null
+    username: "",
+    password: ""
+  };
+
+  handleSubmit = () => {
+    API.signIn({
+      username: this.state.username,
+      password: this.state.password
+    }).then(data => {
+      if (data.error) {
+        alert(data.error)
+      } else {
+        
+      }
+    })
   }
 
-  loginUser = e => { 
-    e.preventDefault()
-    this.setState({
-      loggedIn: true,
-      username: e.target.username.value,
-      showForm: false
-    })
-      e.target.username.value = ''
-      e.target.password.value = ''
+  handleChange = e => {
+    this.setState({ [e.target.name]: e.target.value });
   };
 
   render() {
     return (
       <div>
         <div className="loginForm">
-          {this.state.loggedIn ? 
-          <div>
-            <h1>Welcome back {this.state.username}</h1>
-          </div> : null }
-          {this.state.showForm ? 
-          <div className="form">
-            <form  onSubmit={(username, password) => this.loginUser(username, password)}>
+          {this.state.loggedIn ? (
+            <div>
+              <h1>Welcome back {this.state.username}</h1>
+            </div>
+          ) : null}
+          {this.state.showForm ? (
+            <div className="form">
+              <form onSubmit={() => this.handleSubmit()}>
                 <label>
-                    Username:  
-                    <input type='text' name='username'/>
+                  Username:
+                  <input
+                    onChange={e => this.handleChange(e)}
+                    type="text"
+                    name="username"
+                  />
                 </label>
-                <br/><br/>
+                <br />
+                <br />
                 <label>
-                    Password: 
-                    <input type='password' name='password'/>
+                  Password:
+                  <input
+                    onChange={e => this.handleChange(e)}
+                    type="password"
+                    name="password"
+                  />
                 </label>
                 <br></br>
                 <br></br>
-                <button
-                onSubmit={e => this.loginUser(e)}>
-                  Submit
-                </button>
-            </form>
-          </div> : null }
+                <button>Submit</button>
+              </form>
+            </div>
+          ) : null}
         </div>
       </div>
     );
