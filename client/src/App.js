@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/App.css'
-import { Switch, Route, Link } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 import News from './components/News'
 import Home from './components/Home'
 import Login from './components/Login'
