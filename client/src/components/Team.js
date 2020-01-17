@@ -104,7 +104,7 @@ class Team extends React.Component {
             <img
               onMouseEnter={this.changeKepa}
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p109745.png"
-              alt="image"
+              alt=""
               style={{ width: "150px", height: "150px" }}
             />
             1 Kepa Arrizabalaga
@@ -117,7 +117,7 @@ class Team extends React.Component {
           >
             <img
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p109745.png"
-              alt="image"
+              alt=""
               style={{ width: "150px", height: "150px", opacity: 0.3 }}
             />
             <br />
@@ -136,7 +136,7 @@ class Team extends React.Component {
             <img
               onMouseEnter={this.changeReece}
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p225796.png"
-              alt="image"
+              alt=""
               style={{ width: "150px", height: "150px" }}
             />
             24 Reece James
@@ -149,7 +149,7 @@ class Team extends React.Component {
           >
             <img
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p225796.png"
-              alt="image"
+              alt=""
               style={{ width: "150px", height: "150px", opacity: 0.5 }}
             />{" "}
             <br />
@@ -168,7 +168,7 @@ class Team extends React.Component {
             <img
               onMouseEnter={this.changeAzpi}
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p41328.png"
-              alt="image"
+              alt=""
               style={{ width: "150px", height: "150px" }}
             />
             28 César Azpilicueta
@@ -181,7 +181,7 @@ class Team extends React.Component {
           >
             <img
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p41328.png"
-              alt="image"
+              alt=""
               style={{ width: "150px", height: "150px", opacity: 0.5 }}
             />{" "}
             <br />
@@ -200,7 +200,7 @@ class Team extends React.Component {
             <img
               onMouseEnter={this.changeZouma}
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p103192.png"
-              alt="image"
+              alt=""
               style={{ width: "150px", height: "150px" }}
             />
             15 Kurt Zouma
@@ -213,7 +213,7 @@ class Team extends React.Component {
           >
             <img
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p103192.png"
-              alt="image"
+              alt=""
               style={{ width: "150px", height: "150px", opacity: 0.5 }}
             />{" "}
             <br />
@@ -231,7 +231,7 @@ class Team extends React.Component {
             <img
               onMouseEnter={this.changeTomori}
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p194794.png"
-              alt="image"
+              alt=""
               style={{ width: "150px", height: "150px" }}
             />
             29 Fikayo Tomori
@@ -244,7 +244,7 @@ class Team extends React.Component {
           >
             <img
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p194794.png"
-              alt="image"
+              alt=""
               style={{ width: "150px", height: "150px", opacity: 0.5 }}
             />{" "}
             <br />
@@ -262,7 +262,7 @@ class Team extends React.Component {
             <img
               onMouseEnter={this.changeRudiger}
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p102380.png"
-              alt="image"
+              alt=""
               style={{ width: "150px", height: "150px" }}
             />
             2 Antonio Rudiger
@@ -275,7 +275,7 @@ class Team extends React.Component {
           >
             <img
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p102380.png"
-              alt="image"
+              alt=""
               style={{ width: "150px", height: "150px", opacity: 0.5 }}
             />{" "}
             <br />
@@ -293,7 +293,7 @@ class Team extends React.Component {
             <img
               onMouseEnter={this.changeKante}
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p116594.png"
-              alt="image"
+              alt=""
               style={{ width: "150px", height: "150px" }}
             />
             7 N'Golo Kanté
@@ -306,7 +306,7 @@ class Team extends React.Component {
           >
             <img
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p116594.png"
-              alt="image"
+              alt=""
               style={{ width: "150px", height: "150px", opacity: 0.5 }}
             />{" "}
             <br />
@@ -324,7 +324,7 @@ class Team extends React.Component {
             <img
               onMouseEnter={this.changeJorginho}
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p85955.png"
-              alt="image"
+              alt=""
               style={{ width: "150px", height: "150px" }}
             />
             5 Jorginho
@@ -337,7 +337,7 @@ class Team extends React.Component {
           >
             <img
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p85955.png"
-              alt="image"
+              alt=""
               style={{ width: "150px", height: "150px", opacity: 0.5 }}
             />{" "}
             <br />
@@ -355,7 +355,7 @@ class Team extends React.Component {
             <img
               onMouseEnter={this.changeWillian}
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p47431.png"
-              alt="image"
+              alt=""
               style={{ width: "150px", height: "150px" }}
             />
             10 Willian
@@ -368,7 +368,7 @@ class Team extends React.Component {
           >
             <img
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p47431.png"
-              alt="image"
+              alt=""
               style={{ width: "150px", height: "150px", opacity: 0.5 }}
             />{" "}
             <br />
@@ -386,7 +386,7 @@ class Team extends React.Component {
             <img
               onMouseEnter={this.changeMount}
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p184341.png"
-              alt="image"
+              alt=""
               style={{ width: "150px", height: "150px" }}
             />
             19 Mount
@@ -403,7 +403,7 @@ class Team extends React.Component {
           >
             <img
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p184341.png"
-              alt="image"
+              alt=""
               style={{ width: "150px", height: "150px", opacity: 0.5 }}
             />{" "}
             <br />
@@ -421,7 +421,7 @@ class Team extends React.Component {
             <img
               onMouseEnter={this.changeKovacic}
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p91651.png"
-              alt="image"
+              alt=""
               style={{ width: "150px", height: "150px" }}
             />
             17 Mateo Kovacic
@@ -438,7 +438,7 @@ class Team extends React.Component {
           >
             <img
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p91651.png"
-              alt="image"
+              alt=""
               style={{ width: "150px", height: "150px", opacity: 0.5 }}
             />{" "}
             <br />
@@ -456,7 +456,7 @@ class Team extends React.Component {
             <img
               onMouseEnter={this.changePulisic}
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p176413.png"
-              alt="image"
+              alt=""
               style={{ width: "150px", height: "150px" }}
             />
             22 Christian Pulisic
@@ -472,7 +472,7 @@ class Team extends React.Component {
           >
             <img
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p176413.png"
-              alt="image"
+              alt=""
               style={{ width: "150px", height: "150px", opacity: 0.5 }}
             />{" "}
             <br />
@@ -490,7 +490,7 @@ class Team extends React.Component {
             <img
               onMouseEnter={this.changeTammy}
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p173879.png"
-              alt="image"
+              alt=""
               style={{ width: "150px", height: "150px" }}
             />
             9 Tammy Abraham
@@ -506,7 +506,7 @@ class Team extends React.Component {
           >
             <img
               src="https://premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/p173879.png"
-              alt="image"
+              alt=""
               style={{ width: "150px", height: "150px", opacity: 0.5 }}
             />{" "}
             <br />

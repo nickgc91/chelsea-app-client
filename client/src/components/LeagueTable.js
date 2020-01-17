@@ -1,6 +1,5 @@
 import React from "react";
 import "../css/home.css";
-import TableTeamStats from "./TableTeamStats";
 
 class LeagueTable extends React.Component {
   state = {
@@ -37,7 +36,6 @@ class LeagueTable extends React.Component {
   };
 
   render() {
-    {
       if (!this.state.tableData) {
         return <h1>loading teams info</h1>;
       } else {
@@ -299,6 +297,6 @@ class LeagueTable extends React.Component {
       }
     }
   }
-}
+
 
 export default LeagueTable;

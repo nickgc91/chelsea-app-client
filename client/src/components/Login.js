@@ -12,18 +12,18 @@ class Login extends React.Component {
     password: ""
   };
 
-  handleSubmit = () => {
+  handleSubmit = e => {
+    e.preventDefault()
     API.signIn({
       username: this.state.username,
       password: this.state.password
     }).then(data => {
       if (data.error) {
-        alert(data.error)
+        alert('Incorrect username/password combination :(. Please try again.')
       } else {
-        
+        this.setState({ loggedIn: true })
       }
-    })
-  }
+  })}
 
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
@@ -31,16 +31,15 @@ class Login extends React.Component {
 
   render() {
     return (
-      <div>
-        <div className="loginForm">
-          {this.state.loggedIn ? (
+      this.state.loggedIn ? (
             <div>
               <h1>Welcome back {this.state.username}</h1>
             </div>
-          ) : null}
-          {this.state.showForm ? (
+          ) : 
+          (
+            <div className="loginForm">
             <div className="form">
-              <form onSubmit={() => this.handleSubmit()}>
+              <form onSubmit={e => this.handleSubmit(e)}>
                 <label>
                   Username:
                   <input
@@ -64,11 +63,10 @@ class Login extends React.Component {
                 <button>Submit</button>
               </form>
             </div>
-          ) : null}
         </div>
-      </div>
-    );
-  }
-}
+          )
+    )
+          }
+          }
 
 export default Login;
