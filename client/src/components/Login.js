@@ -18,7 +18,7 @@ class Login extends React.Component {
       if (data.error) {
         throw Error(data.error)
       } else {
-        this.props.signIn(data.username)
+        this.props.signIn(data)
         this.props.history.push('/profile')
       }
     })
