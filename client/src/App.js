@@ -13,29 +13,30 @@ class App extends React.Component {
   };
 
   signIn = user => {
-    this.setState({ username: user.username })
-    localStorage.setItem('token', user.id)
+    this.setState({ username: user.username });
+    localStorage.setItem("token", user.id);
   };
 
   signOut = () => {
-    this.setState({ username: "" })
-    localStorage.removeItem('token')
+    this.setState({ username: "" });
+    localStorage.removeItem("token");
   };
 
   componentDidMount() {
-     if (localStorage.getItem('token') !== undefined ) {
-       API.validate()
-       .then(data => {
-         if (data.error) {
-           throw Error(data.error)
-         } else {
-           this.signIn(data)
-           this.props.history.push('/profile')
-         }
-       })
-       .catch(error => 
-        alert(error))
-     }
+    if (localStorage.getItem("token") !== undefined) {
+      API.validate()
+        .then(data => {
+          if (data.error) {
+            throw Error(data.error);
+          } else {
+            this.signIn(data);
+            this.props.history.push("/profile");
+          }
+        })
+        .catch(error => {
+          alert(error);
+        });
+    }
   }
 
   render() {
@@ -60,7 +61,11 @@ class App extends React.Component {
           exact
           path="/profile"
           component={routerProps => (
-            <FanProfile {...routerProps} username={this.state.username} signOut={this.signOut} />
+            <FanProfile
+              {...routerProps}
+              username={this.state.username}
+              signOut={this.signOut}
+            />
           )}
         />
       </Switch>
