@@ -1,8 +1,9 @@
 import React from 'react'
-
+import API from './API'
 
 
 class FanProfile extends React.Component {
+
 
     componentDidMount() {
         if (!this.props.username) {
@@ -14,9 +15,11 @@ class FanProfile extends React.Component {
         render() {
 
             return (
+
+                
                 <div>
                 <h1>Fan Profile Page</h1>
-                <h2>Welcome {`${this.props.username}`}!</h2>
+                <h2>Welcome {this.props.username}!</h2>
                 <button 
                 onClick={this.props.signOut}>
                 Sign Out
