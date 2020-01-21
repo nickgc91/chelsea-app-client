@@ -1,25 +1,29 @@
 const baseUrl = "http://localhost:3000";
 const signInUrl = baseUrl + "/signIn";
 const validateUrl = baseUrl + "/validate";
+const profileUrl = baseUrl + "/profile";
 
-const get = url => fetch(url, {
-  headers: { Authorization: localStorage.getItem('token') }
-}).then(resp => resp.json())
+const get = url =>
+  fetch(url, {
+    headers: { Authorization: localStorage.getItem("token") }
+  }).then(resp => resp.json());
 
-const post = (url, data) =>  
+const post = (url, data) =>
   fetch(url, {
     method: "POST",
-    headers: { 
-      'Content-Type': 'application/json',
-      Authorization: localStorage.getItem('token')
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: localStorage.getItem("token")
     },
     body: JSON.stringify({ data })
-  }).then(resp => resp.json())
+  }).then(resp => resp.json());
 
-const signIn = user => post(signInUrl, user)
+const signIn = user => post(signInUrl, user);
 
-const validate = () => get(validateUrl)
+const validate = () => get(validateUrl);
 
-window.validate = validate
+const getProfileData = () => get(profileUrl)
 
-export default { signIn, validate }
+window.validate = validate;
+
+export default { signIn, validate, getProfileData };
