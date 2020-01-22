@@ -14,17 +14,18 @@ class Login extends React.Component {
     API.signIn({
       username: this.state.username,
       password: this.state.password
-    }).then(data => {
-      if (data.error) {
-        throw Error(data.error)
-      } else {
-        this.props.signIn(data)
-        this.props.history.push('/profile')
-      }
     })
-    .catch(error => {
-      alert(error )
-    })
+      .then(data => {
+        if (data.error) {
+          throw Error(data.error);
+        } else {
+          this.props.signIn(data);
+          this.props.history.push("/profile");
+        }
+      })
+      .catch(error => {
+        alert(error);
+      });
   };
 
   handleChange = e => {
