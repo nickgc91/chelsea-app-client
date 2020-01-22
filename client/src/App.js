@@ -18,8 +18,8 @@ class App extends React.Component {
   };
 
   signOut = () => {
-    this.setState({ username: "" });
-    localStorage.removeItem("token");
+    this.setState({ username: "" })
+    localStorage.removeItem("token")
   };
 
   componentDidMount() {
