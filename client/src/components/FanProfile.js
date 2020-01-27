@@ -28,7 +28,8 @@ class FanProfile extends React.Component {
       width: '640',
       playerVars: { // https://developers.google.com/youtube/player_parameters
         
-      }
+      },
+      
     };
 
     return (
@@ -36,11 +37,13 @@ class FanProfile extends React.Component {
         <h1>Welcome {this.state.userData.first_name}{" "}
           {this.state.userData.last_name}!</h1>
         <h3>Your favorite player is {this.state.userData.favorite_player}.</h3>
+
         <button onClick={this.props.signOut}>Sign Out</button>
         <YouTube
         videoId={this.state.userData.favorite_video}
         opts={opts}
         onReady={this._onReady}
+   
       />
       </div>
     );
