@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    font-family: Georgia, Times, serif;
+    color: purple;
+}
+
+button {
+    border-radius: 25px;
+    background-color: blue;
+    height: 30pt;
+    width: 80pt;
+    text-size-adjust: 100%;
+    color: white;
+    font: Georgia;
+}

@@ -19,7 +19,7 @@ const NavBar = () => {
           <a href="/about">CHELSEA STORE</a>
         </li>
         <li>
-          <a href="/login">LOGIN</a>
+          <a href="/login">MY PROFILE</a>
         </li>
       </ul>
     </div>

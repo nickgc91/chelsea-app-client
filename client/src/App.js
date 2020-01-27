@@ -23,18 +23,18 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-    if (localStorage.getItem("token") !== undefined) {
+    if (localStorage.getItem("token") !== null) {
       API.validate()
         .then(data => {
           if (data.error) {
             throw Error(data.error);
           } else {
-            this.signIn(data);
-            this.props.history.push("/profile");
+            this.signIn(data) 
           }
         })
         .catch(error => {
-          alert(error);
+          debugger
+          alert(error)
         });
     }
   }
@@ -54,7 +54,11 @@ class App extends React.Component {
           exact
           path="/login"
           component={routerProps => (
-            <Login {...routerProps} signIn={this.signIn} />
+            <Login 
+            {...routerProps} 
+            signIn={this.signIn} 
+            username={this.state.username}
+            />
           )}
         />
         <Route

@@ -14,8 +14,8 @@ ReactDOM.render(
       <NavBar />
       <App />
     </Router>
-    <div className='footer'>
-    <Banner /></div>
+   
+    
   </div>,
   document.getElementById("root")
 );
