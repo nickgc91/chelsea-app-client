@@ -9,6 +9,14 @@ class Login extends React.Component {
     password: ""
   };
 
+  componentDidMount() {
+    if (this.props.username) {
+      this.props.history.push("/profile")
+    }
+  }
+
+ 
+
   handleSubmit = e => {
     e.preventDefault();
     API.signIn({
@@ -25,7 +33,7 @@ class Login extends React.Component {
       })
       .catch(error => {
         alert(error);
-      });
+      })
   };
 
   handleChange = e => {
