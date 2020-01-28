@@ -3,7 +3,7 @@ import "../css/navBar.css";
 import { withRouter } from 'react-router-dom'
 
 
-const NavBar = () => {
+const NavBar = props => {
   return (
     <div className="navbar">
       <ul>
@@ -21,6 +21,12 @@ const NavBar = () => {
         <li>
           <a href="/login">MY PROFILE</a>
         </li>
+        { props.username ? 
+           <li onClick={() => props.signOut()}>
+           <a href="/">LOGOUT</a>
+         </li> 
+         :
+         null }
       </ul>
     </div>
   );
