@@ -3,15 +3,14 @@ import ReactDOM from "react-dom";
 import "./css/index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import NavBar from "./components/NavBar";
 import Banner from "./components/Banner";
 import { BrowserRouter as Router } from "react-router-dom";
+import 'semantic-ui-css/semantic.min.css'
 
 ReactDOM.render(
   <div>
     <Banner />
     <Router>
-      <NavBar />
       <App />
     </Router>
    

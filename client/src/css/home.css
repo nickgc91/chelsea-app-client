@@ -10,7 +10,7 @@
   font-size: 20px;
 }
 
-.grid-container {
+.players-grid-container {
   background-color: green;
   border-radius: 20px;
   grid-area: team;

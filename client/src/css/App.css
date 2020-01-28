@@ -6,8 +6,8 @@ body {
 
 button {
     border-radius: 25px;
-    background-color: blue;
-    height: 30pt;
+    background-color: grey;
+    height: 20pt;
     width: 80pt;
     text-size-adjust: 100%;
     color: white;

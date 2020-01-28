@@ -98,7 +98,7 @@ class Team extends React.Component {
 
   render() {
     return (
-      <div className="grid-container">
+      <div className="players-grid-container">
         {!this.state.kepaInfo ? (
           <div className="keeper">
             <img

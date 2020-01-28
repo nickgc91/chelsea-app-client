@@ -6,6 +6,8 @@ import Home from "./components/Home";
 import Login from "./components/Login";
 import FanProfile from "./components/FanProfile";
 import API from "./components/API";
+import NavBar from "./components/NavBar";
+
 
 class App extends React.Component {
   state = {
@@ -41,6 +43,8 @@ class App extends React.Component {
 
   render() {
     return (
+      <div>
+      <NavBar signOut={this.signOut} username={this.state.username}/>
       <Switch>
         <Route exact path="/">
           <Home />
@@ -73,6 +77,7 @@ class App extends React.Component {
           )}
         />
       </Switch>
+      </div>
     );
   }
 }
