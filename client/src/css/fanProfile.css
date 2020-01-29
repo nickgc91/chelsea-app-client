@@ -10,11 +10,6 @@
   grid-area: moments;
 }
 
-textarea {
-  width: 400px;
-  height: 60px;
-}
-
 .profile-grid-container {
   display: grid;
   grid-template-areas: 
