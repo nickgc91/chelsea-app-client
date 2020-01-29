@@ -13,3 +13,9 @@ button {
     color: white;
     font: Georgia;
 }
+
+textarea {
+    width: 400px;
+    height: 60px;
+    border-radius: 8px;
+  }
