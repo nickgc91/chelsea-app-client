@@ -84,7 +84,6 @@ class FanProfile extends React.Component {
       } 
     })
     .catch(error => {
-      debugger
       alert(error)
     });
     this.setState({
@@ -93,24 +92,60 @@ class FanProfile extends React.Component {
   };
 
   handleMemoryUpdateSubmit = () => {
+    API.updateMemorableMemory({data: this.state.memorableMemory})
+    .then(data => {
+      if (data.error) {
+        throw Error(data.error);
+      } 
+    })
+    .catch(error => {
+      alert(error)
+    });
     this.setState({
       enterMemorableMoment: false
     });
   };
 
   handleUpliftingWinUpdateSubmit = () => {
+    API.updateUpliftingWin({data: this.state.upliftingWin})
+    .then(data => {
+      if (data.error) {
+        throw Error(data.error);
+      } 
+    })
+    .catch(error => {
+      alert(error)
+    });
     this.setState({
       enterUpliftingWin: false
     });
   };
 
   handleDemoralizingDefeatUpdateSubmit = () => {
+    API.updateDemoralizingDefeat({data: this.state.demoralizingDefeat})
+    .then(data => {
+      if (data.error) {
+        throw Error(data.error);
+      } 
+    })
+    .catch(error => {
+      alert(error)
+    });
     this.setState({
       enterDemoralizingDefeat: false
     });
   };
 
   handleYoutubeVideoIdUpdateSubmit = () => {
+    API.updateYoutubeVideoId({data: this.state.youTubeId})
+    .then(data => {
+      if (data.error) {
+        throw Error(data.error);
+      } 
+    })
+    .catch(error => {
+      alert(error)
+    });
     this.setState({
       enterYoutubeVideoID: false
     });
@@ -252,6 +287,7 @@ class FanProfile extends React.Component {
             </div>
           )}
         </div>
+       
       </div>
     );
   }

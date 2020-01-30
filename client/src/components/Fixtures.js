@@ -56,17 +56,27 @@ class Fixtures extends React.Component {
           <br/><br/>
           <li>Everton 3 - 1 Chelsea (PL)</li>
           <br/><br/>
-          <li>10/12/19 Chelsea - Lille (CL)</li>
+          <li>Chelsea 2 - 1 Lille (CL)</li>
           <br/><br/>
-          <li>14/12/19 Chelsea - Bournemouth (PL)</li>
+          <li>Chelsea 0 - 1 Bournemouth (PL)</li>
           <br/><br/>
-          <li>22/12/19 Tottenham - Chelsea (PL)</li>
+          <li>Tottenham 0 - 2 Chelsea (PL)</li>
           <br/><br/>
-          <li>26/12/19 Chelsea - Southampton (PL)</li>
+          <li>Chelsea 0 - 2 Southampton (PL)</li>
           <br/><br/>
-          <li>29/12/19 Arsenal - Chelsea (PL)</li>
+          <li>Arsenal 1 - 2 Chelsea (PL)</li>
           <br/><br/>
-          <li>01/01/2020 Brighton - Chelsea (PL)</li>
+          <li>Brighton 1 - 1 Chelsea (PL)</li>
+          <br/><br/>
+          <li>Chelsea 2 - 0 Nttm Forest (FA)</li>
+          <br/><br/>
+          <li>Chelsea 3 - 0 Burnley (PL)</li>
+          <br/><br/>
+          <li>Newcastle 1 - 0 Chelsea (PL)</li>
+          <br/><br/>
+          <li>Chelsea 2 - 2 Arsenal (PL)</li>
+          <br/><br/>
+          <li>Hull City 1 - 2 Chelsea (FA)</li>
         </ul>
       </div>
     );
