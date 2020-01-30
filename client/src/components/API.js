@@ -3,9 +3,10 @@ const signInUrl = baseUrl + "/signIn";
 const validateUrl = baseUrl + "/validate";
 const profileUrl = baseUrl + "/profile";
 const updateFavMatchUrl = baseUrl + '/updateFavMatch'
-const updateMemorableMemoryUrl = baseUrl + 'updateMemorableMemory'
-const updateUpliftingWinUrl = baseUrl + 'updateUpliftingWin'
-const updateDemoralizingDefeatUrl = baseUrl + 'updateDemoralizingDefeat'
+const updateMemorableMemoryUrl = baseUrl + '/updateMemorableMemory'
+const updateUpliftingWinUrl = baseUrl + '/updateUpliftingWin'
+const updateDemoralizingDefeatUrl = baseUrl + '/updateDemoralizingDefeat'
+const updateYoutubeVideoIdUrl = baseUrl + '/updateYoutubeVideoId'
 
 const get = url =>
   fetch(url, {
@@ -36,7 +37,10 @@ const updateUpliftingWin = data => post(updateUpliftingWinUrl, data)
 
 const updateDemoralizingDefeat = data => post(updateDemoralizingDefeatUrl, data)
 
+const updateYoutubeVideoId = data => post(updateYoutubeVideoIdUrl, data)
+
 window.validate = validate;
 
 export default { signIn, validate, getProfileData, updateFavMatch, 
-  updateMemorableMemory, updateUpliftingWin, updateDemoralizingDefeat };
+  updateMemorableMemory, updateUpliftingWin, updateDemoralizingDefeat,
+  updateYoutubeVideoId };

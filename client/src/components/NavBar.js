@@ -12,12 +12,12 @@ const NavBar = props => {
             HOME
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="/news">NEWS</a>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <a href="/about">CHELSEA STORE</a>
-        </li>
+        </li> */}
         <li>
           <a href="/login">MY PROFILE</a>
         </li>

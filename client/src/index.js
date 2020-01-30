@@ -9,10 +9,11 @@ import 'semantic-ui-css/semantic.min.css'
 
 ReactDOM.render(
   <div>
-    <Banner />
+    
     <Router>
-      <App />
+      <App style={{ paddingBottom: '200px' }}/>
     </Router>
+
    
     
   </div>,

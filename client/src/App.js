@@ -7,6 +7,7 @@ import Login from "./components/Login";
 import FanProfile from "./components/FanProfile";
 import API from "./components/API";
 import NavBar from "./components/NavBar";
+import Banner from './components/Banner'
 
 
 class App extends React.Component {
@@ -35,7 +36,6 @@ class App extends React.Component {
           }
         })
         .catch(error => {
-          debugger
           alert(error)
         });
     }
@@ -43,9 +43,15 @@ class App extends React.Component {
 
   render() {
     return (
+      
+      <body>
+      <div className='container'> 
+      <div className='main'>
       <div>
+      <Banner />
       <NavBar signOut={this.signOut} username={this.state.username}/>
-      <Switch>
+      </div>
+          <Switch>
         <Route exact path="/">
           <Home />
         </Route>
@@ -78,7 +84,12 @@ class App extends React.Component {
         />
       </Switch>
       </div>
-    );
+    </div> 
+     <div className='footer-banner'>
+     <Banner/>
+   </div> 
+   </body>
+  )
   }
 }
 

@@ -45,17 +45,17 @@ class Home extends React.Component {
       style={{ paddingBottom: '10px', width: '200px', color: 'white' }} 
       className="title"
       onClick={this.onClickToggleShowFixtures}>
-      <h3>Chelsea Fixtures</h3></button> 
+      Chelsea Fixtures</button> 
       <button
       style={{ paddingBottom: '10px', width: '200px', color: 'white' }} 
       className="title"
       onClick={this.onClickToggleShowTable}>
-      <h3>Premier League Table</h3></button> 
+      Premier League Table</button> 
       <button
       style={{ paddingBottom: '10px', width: '200px', color: 'white' }} 
       className="title"
       onClick={this.onClickToggleShowTeam}>
-      <h3>Starting 11</h3></button> 
+      Starting 11</button> 
       <div className="main-grid">
         
         {this.state.showTeam ? 
