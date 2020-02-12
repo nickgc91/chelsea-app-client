@@ -77,6 +77,8 @@ class Fixtures extends React.Component {
           <li>Chelsea 2 - 2 Arsenal (PL)</li>
           <br/><br/>
           <li>Hull City 1 - 2 Chelsea (FA)</li>
+          <br/><br/>
+          <li>Leicester City 2 - 2 Chelsea (PL)</li>
         </ul>
       </div>
     );
